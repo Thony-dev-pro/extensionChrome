@@ -75,3 +75,11 @@ function getRandomValueSelectForAllSelect(form){
 }
 
 
+function ckeckAllInputCheckBox(form){
+    const checkBoxes = form.querySelectorAll('input[type="checkbox"]');
+    checkBoxes.forEach((checkBox) => {
+        checkBox.checked = true;
+        activeAllEventsInput(checkBox);
+    });
+}
+

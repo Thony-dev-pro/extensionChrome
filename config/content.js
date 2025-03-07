@@ -6,7 +6,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         const forms = document.querySelectorAll("form");
         forms.forEach(form => {
             generateTexteForAllInputForm(form);
-            getRandomValueSelectForAllSelect(form)
+            getRandomValueSelectForAllSelect(form);
+            ckeckAllInputCheckBox(form);
         });
     }
 });
